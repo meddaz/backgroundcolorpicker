@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Background Color Picker</title>
+    <style>
+    header {
+            font-family: monospace;
+            color: #eee;
+        }
+        #colorpicker {
+            width: 90px;
+            height: 90px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Background Color Picker
+            <h1>
+    </header>
+
+
+    <main>
+        <input type="color" id="colorpicker">
+    </main>
+    <script>
+ 
+
+ var colorPicker = document.getElementById('colorpicker');
+
+
+setInterval(()=>{
+    var color = colorPicker.value;
+    document.body.style.backgroundColor = color;
+}, 200);
+
+    </script>
+</body>
